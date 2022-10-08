@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Java : Variable</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Java</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="#">About</a>
+      <a href ="#">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side"></div>
+
+      <div class = "column middle">
+       
+          <h1>Variable</h1>
+
+          <p>Variable is a placeholder that store a data in a program. The value of data can change during program execution.</p>
+
+          <p>Variable declaration is creating a variable in a program to be used for different purposes in that program. Variable is declared with following syntax:</p>
+
+          <pre class="type1">dataType variableName;</pre>
+
+          <p>The <b>dataType</b> are keyword such as int, char or double. The <b>variable names</b> are identifier in example are length, grade, and distance.</p>
+          <p>For example, declare a integer variable to count cars that uses a road.</p>
+          <pre>int countCars;</pre>
+          <p>By convention, variable names are written using lowercase letter, cannot have space and do not start with digits. For example, </p>
+          <ul><li>height</li> <li>shortestDistance</li> <li>grossProfitMargin</li></ul>
+          <p>Declaring multiple variables of same data type</p>
+          <pre class="type1">dataType variable1, variable2;</pre>
+          <p>For example, width, height and length are double: </p>
+          <pre class="type2"><ky>double</ky> width, height, length;</pre>
+
+          <p><b>Variables initialization</b> is assigning an initial value of the variable.</p>
+          <pre  class="type1">dataType variableName = value; </pre>
+          <p>for example</p>
+          <pre class="type2"><ky>int</ky> a = <v>0</v>;</pre>
+
+          <h2>Data types</h2>
+          </p>Java supports data type such as byte, short, int, long, float, double, char, and Boolean. </p>
+          <p>These data types are known as primitive data types. Java also supports user-defined data types that we call object.</p>
+          <p>In variable declaration, we must specify data type and variable name. Variable name provides reference to the memory location, and data type specifies the type of data this variable will be used to store. </p>
+          <p>Data type also specify what types of operations that can be performed on those variables. Differences between Numeric data type are range and storage size. Numeric data types can be used arithmetic operation. </p>
+          <table>
+            <tr><th>Data Type</th><th>Description</th></tr>
+            <tr><td>byte</td><td>integer type size 1 byte</td></tr>
+            <tr><td>short</td><td>integer type size 2 byte</td></tr>
+            <tr><td>int</td><td>integer type size 4 byte</td></tr>
+            <tr><td>long</td><td>integer type size 8 byte</td></tr>
+            <tr><td>float</td><td>decimal number with up to 6 decimal digits</td></tr>
+            <tr><td>double</td><td>decimal number with up to 15 decimal digits</td></tr>
+          </table>
+
+
+          <h2>Constant</h2>
+          <p>Like a variable, a constant used to store data. Constant value do not change during program execution. Syntax for constant declaration.</p>
+          <pre class="type1">final dataType CONSTANTNAME = value;</pre>
+          <p>When a constant is declared, it must be initialized with a initial value.</p>
+          <pre class="type2"><ky>final</ky> <ky>double</ky> INTEREST_RATE = <v>3.5</v>;</pre>
+          <p>By convention, a constant name is written is uppercase. Using a constant make programming easy to maintain, we only need to change the value at one location. A descriptive name for a constant makes program easy to read.</p>       
+      </div>
+      <div class = "column side"></div>
+    </div>
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>
