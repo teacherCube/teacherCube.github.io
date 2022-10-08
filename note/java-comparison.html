@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>Java : Comparison</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Java</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="#">About</a>
+      <a href ="#">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side"></div>
+
+      <div class = "column middle">       
+        <h2>Comparison</h2>
+        <p>Comparison operators are used to find the relationship between two values. They are also known as relational operators.</p>
+        <table>
+          <tr><th>Name</th><th>Operator</th><th>Example</th></tr>
+          <tr><td>More than</td><td>&gt;</td><td>a &gt; b</td></tr>
+          <tr><td>Less than</td><td>&lt;</td><td>a &lt; b</td></tr>
+          <tr><td>More than or Equal to</td><td>&gt;=</td><td>a &gt;= b</td></tr>
+          <tr><td>Less than or Equal to</td><td>&lt;=</td><td>a &lt;= b</td></tr>
+          <tr><td>Equal to</td><td>==</td><td>a == b</td></tr>
+          <tr><td>Not Equal to</td><td>!=</td><td>a != b</td></tr>
+        </table>
+        <p>More than (>) operator returns <ky>true</ky> if value of <em>a</em> is bigger than value of <em>b</em>, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(a > b);<des>// displays false</des></pre>
+
+        <p>Less than (<) operator returns <ky>true</ky> if value of <em>a</em> is smaller than value of <em>b</em>, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(a > b);<des>// displays true</des></pre>
+        <p>Equal to (==) operator returns <ky>true</ky> if value of <em>a</em> is equal to value of <em>b</em>, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(a == b);<des>// displays false</des>
+<ky>System</ky>.<em>out</em>.println(b == <v>8</v>);<des>// displays true</des>
+</pre>
+
+
+        <p>More than or equal to (>=) operator returns <ky>true</ky> if value of <em>a</em> is bigger than value of <em>b</em> or if the values are equal, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(a >= b);<des>// displays false</des>
+<ky>System</ky>.<em>out</em>.println(a >= <v>5</v>);<des>// displays true</des></pre>
+        <p>Less than or equal to (<=) operator returns <ky>true</ky> if value of <em>a</em> is smaller than value of <em>b</em> or if the values are equal, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(a <= b);<des>// displays true</des>
+<ky>System</ky>.<em>out</em>.println(a <= <v>5</v>);<des>// displays true</des></pre>
+
+   <p>Not equal to (!=) operator returns <ky>true</ky> if value of <em>a</em> is not equal to value of <em>b</em>, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(a != b);<des>// displays true</des>
+<ky>System</ky>.<em>out</em>.println(b != <v>8</v>);<des>// displays false</des>
+</pre>
+      <h2>Logical</h2>
+
+        <table>
+          <tr><th>Name</th><th>Operator</th><th>Example</th></tr>
+          <tr><td>Logical And</td><td>&&</td><td>a && b</td></tr>
+          <tr><td>Logical Or</td><td>||</td><td>a || b</td></tr>
+          <tr><td>Logical Not</td><td>!</td><td>!a</td></tr>
+        </table>
+      </div>
+      <p>Logical And (&&) operator returns <ky>true</ky> if value of <em>a</em> and value of <em>b</em> is <v>true</v>, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(true && true);<des>// displays true</des>
+<ky>System</ky>.<em>out</em>.println((a < b) && (a < <v>10</v>));<des>// displays true</des>
+<ky>System</ky>.<em>out</em>.println((a > b) && (a < <v>10</v>));<des>// displays false</des>
+</pre>
+
+      <p>Logical Or (||) operator returns <ky>true</ky> if either one or both value of <em>a</em> and value of <em>b</em> is <v>true</v>, otherwise it returns <ky>false</ky>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(true || false);<des>// displays true</des>
+<ky>System</ky>.<em>out</em>.println((a == <v>1</v>) || (b < <v>5</v>));<des>// displays false</des>
+<ky>System</ky>.<em>out</em>.println((a < b) || (b < <v>10</v>));<des>// displays true</des>
+</pre>
+      <p>Not(!) operator returns <ky>true</ky> if value of <em>a</em> is <v>false</v>, and returns <ky>false</ky> if value of <em>a</em> is <v>true</v>.</p>
+        <pre class="type2"><ky>int</ky> a = <v>5</v>; 
+<ky>int</ky> b = <v>8</v>; 
+<ky>System</ky>.<em>out</em>.println(!(a < b));<des>// displays false</des>
+<ky>System</ky>.<em>out</em>.println(!(<v>3</v> < <v>1</v>));<des>// displays true</des>
+</pre>
+      <div class = "column side"></div>
+    </div>
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>

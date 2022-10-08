@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>Java : Repetition</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Java</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="#">About</a>
+      <a href ="#">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side"></div>
+
+      <div class = "column middle">       
+        <h1>Repetition</h1>
+        <p>Loop or repetition statements are to repeat statement execution until stopped. There are three types of repetition statements: for, while and do..while</p>
+        
+        <h3>While statement</h3>
+        <p>Using while loop, if the condition is true, the statements are executed again.if the condition is false the loop is exited or terminated.</p>
+        <pre class="type1"><ky>while</ky>(condition){
+  <des>// statement(s)</des>
+}</pre>
+        <p>The statement may not execute at all if the condition is false when executing the loop statement for first time. To execute statement at least once, we can use do...while loop.</p>
+        <p>For example, display 1 to 5 using while loop.</p>
+      <pre class="type2">
+<ky>int</ky> a = <v>1</v>;
+<ky>while</ky>(a <= <v>5</v>){
+  <ky>System</ky>.out.println(a);
+  a++;
+}
+</pre>
+
+        
+        <h3>Do...while statement</h3>
+        <p>In Do...while loop,the statement is executed before check the condition. if the condition is true, the statements are executed again….if the condition is false the loop is exited or terminated.</p>
+        <pre class="type1"><ky>do</ky>{
+  <des>// statement(s)</des>
+}(condition);</pre>
+
+              <pre class="type2">
+<ky>int</ky> a = <v>1</v>;
+<ky>do</ky>{
+  <ky>System</ky>.out.println(a);
+  a++;
+}<ky>while</ky>(a <= <v>5</v>);
+</pre>
+        
+        <h3>For statement</h3>
+        <p>The for loop is used when as already know how many time to loop. It has three parameters, init, condition and update. These parameters are seperated using semicolon. </p>
+        <pre class="type1"><ky>for</ky>(init; condition; update){
+  <des>// statement(s)</des>
+}</pre>
+
+        <d1>
+          <dt>init</dt><dd>Initializes the variable used to control the the loop.</dd>
+          <dt>condition</dt><dd>Checks control variable and decides to loop again or stop. Condition is written in boolean expression.</dd>
+          <dt>update</dt><dd>Update the control variable after each loop.</dd>
+        </d1>
+        <p>For example, display 1 until 5 using the for loop.</p>
+      <pre class="type2">
+<ky>for</ky>(<ky>int</ky> a = 1; a <= <v>5</v>; a++){
+  <ky>System</ky>.out.println(a);
+}
+</pre>
+
+              <h3>Break and Continue</h3>
+      <p>the break statement is used to terminate a loop before stopping condition is met.</p>
+
+
+      <pre class="type2">
+<ky>int</ky> a = <v>1</v>;
+<ky>while</ky>(a <= <v>5</v>){
+  System.out.println(a);
+  a++;
+  <ky>if</ky>(a == <v>3</v>)
+    <ky>break</ky>;
+}
+</pre>
+      <p>the continue statement is used to skip one repetition in the loop and skips to next repetition.</p>
+      <pre class="type2">
+<ky>int</ky> a = <v>1</v>;
+<ky>while</ky>(a <= <v>5</v>){
+ 
+  <ky>if</ky>(a == <v>3</v>){
+    a++;
+    <ky>continue</ky>;
+  }
+  
+  System.out.println(a);
+  a++;
+}
+</pre>
+
+
+
+      </div>
+
+      <div class = "column side"></div>
+    </div>
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>
