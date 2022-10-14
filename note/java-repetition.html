@@ -10,17 +10,22 @@
     </div>
     <div class = "topnav">
       <a href ="../index.html">Home</a>
-      <a href ="#">About</a>
-      <a href ="#">Contact</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
     </div>
     <div class = "row">
-      <div class = "column side"></div>
+      <div class = "column side left">
+        <a class="subtopic-link" href="#while">While statement</a>
+        <a class="subtopic-link" href="#do-while">Do...while statement</a>
+        <a class="subtopic-link" href="#for">For statement</a>
+        <a class="subtopic-link" href="#breakCont">Break and Continue</a>
+      </div>
 
       <div class = "column middle">       
         <h1>Repetition</h1>
         <p>Loop or repetition statements are to repeat statement execution until stopped. There are three types of repetition statements: for, while and do..while</p>
         
-        <h3>While statement</h3>
+        <h3 id="while">While statement</h3>
         <p>Using while loop, if the condition is true, the statements are executed again.if the condition is false the loop is exited or terminated.</p>
         <pre class="type1"><ky>while</ky>(condition){
   <des>// statement(s)</des>
@@ -36,7 +41,7 @@
 </pre>
 
         
-        <h3>Do...while statement</h3>
+        <h3 id="do-while">Do...while statement</h3>
         <p>In Do...while loop,the statement is executed before check the condition. if the condition is true, the statements are executed again….if the condition is false the loop is exited or terminated.</p>
         <pre class="type1"><ky>do</ky>{
   <des>// statement(s)</des>
@@ -50,7 +55,7 @@
 }<ky>while</ky>(a <= <v>5</v>);
 </pre>
         
-        <h3>For statement</h3>
+        <h3 id="for">For statement</h3>
         <p>The for loop is used when as already know how many time to loop. It has three parameters, init, condition and update. These parameters are seperated using semicolon. </p>
         <pre class="type1"><ky>for</ky>(init; condition; update){
   <des>// statement(s)</des>
@@ -68,7 +73,7 @@
 }
 </pre>
 
-              <h3>Break and Continue</h3>
+              <h3 id="breakCont">Break and Continue</h3>
       <p>the break statement is used to terminate a loop before stopping condition is met.</p>
 
 

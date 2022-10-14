@@ -10,17 +10,22 @@
     </div>
     <div class = "topnav">
       <a href ="../index.html">Home</a>
-      <a href ="#">About</a>
-      <a href ="#">Contact</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
     </div>
     <div class = "row">
-      <div class = "column side"></div>
+      <div class = "column side left">
+          <a class="subtopic-link" href="#declare">Declaring Method</a>
+          <a class="subtopic-link" href="#call">Method Call</a>
+      </div>
 
       <div class = "column middle">       
-        <h1>Method</h1>
+        <h2>Method</h2>
+
         <p>Method is a group of statement that perform certain action. To execute actions stated in a method, the method is called. Method is an example of code reuse. Once method is created, it can be used many times.</p>
         
-        <h3>Method declaration</h3>
+        <h3 id="declare">Method declaration</h3>
+
         <p>Method is declared inside a class</p>
         <pre class="type2"><ky>class</ky> MyApp{
   <ky>public</ky> <ky>static</ky> <ky>void</ky> main(String[] args){
@@ -35,6 +40,7 @@
 
 }</pre>
         <p>Method declaration is written as:</p>
+
         <pre class="type1">modifier returnType methodName(parameters){
   <des>// method body</des>
 }</pre>
@@ -44,9 +50,11 @@
           <dt>returnType</dt><dd>- the data type of the value returned by the method. It can be int, float char,etc. If the method method return a value, it should have a <ky>return</ky> statement. If the method do not return value, void keyword is used.</dd>
           <dt>modifier</dt><dd>- keyword such as <ky>static</ky> is used specify the method is belong to main class, and not belonging to an object. Other keyword such as <ky>public</ky> or <ky>private</ky> indicates accessibility of the method.</dd>
         </dl>
+
         <pre class="type2"><ky>public</ky> <ky>static</ky> <ky>void</ky> sayHello(){
   <ky>System</ky>.<em>out</em>.println(<v>"Hello World"</v>);
 }</pre>
+
 <p>Or,</p>
         <pre class="type2"><ky>public</ky> <ky>static</ky> <ky>int</ky> add(int num1, int num2){
   <ky>int</ky> total;
@@ -54,18 +62,22 @@
   <ky>return</ky> total;
 }</pre>
 
-        <h3>Method Call</h3>
+        <h3 id="call">Method Call</h3>
+
         <p>To use a method, the method need to be called.</p>
+
         <pre class="type2"><ky>public</ky> <ky>static</ky> <ky>void</ky> main(String[] args){
   sayHello();
 }</pre>
 
         <p>calling a method with a parameters</p>
+
         <pre class="type2"><ky>public</ky> <ky>static</ky> <ky>void</ky> main(String[] args){
   <ky>int</ky> answer = add(<v>3</v>, <v>5</v>);
   <ky>System</ky>.<em>out</em>.println(answer);
 }</pre>
         <p>In above example, the value 3 and 4 are called argument. Arguments are values passed to the parameters in a method. THe value returned by the method is assigned to variable called <em>answer</em> in main method.</p>
+        
       </div>
 
       <div class = "column side"></div>

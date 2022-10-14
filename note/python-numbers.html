@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Python : Numbers</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Python</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">
+        <a class="subtopic-link" href="#operation">Operation</a>
+        <a class="subtopic-link" href="#types">Number types</a>
+        <a class="subtopic-link" href="#casting">Casting</a>
+      </div>
+
+      <div class = "column middle">   
+        <h2>Numbers</h2>
+
+        <p>Computers process numbers and manipulate their value. Numbers are represented using binary values. Many programming languages differentiate numbers as integers and floating numbers.</p>
+
+        <p>Numbers can be represented as integers, floats, and complex numbers. Numbers can be applied with mathematical operators like addition, subtraction, multiplication, division, and modulus.</p>
+
+        <h3 id="operation">Operation on Number</h3>
+
+        <p>Arithmetic operations are performed on numbers. The operations are addition (+), subtraction (-), multiplication (*), division(/), and remainder(%).</p>
+
+        <pre class="type2">left = 23
+right = 34
+print(left + right)     # 57
+print(left - right)     # -11
+print(left * right)     # 782
+print(left / right)     # 0.6764705882352942
+print(left % right)     # 23</pre>
+
+
+        <h3 id="types">Types of Numbers</h3>
+
+        <p>Integers are numbers such as:</p>
+        <ul>
+          <li>-23</li>
+          <li>0</li>
+          <li>30</li>
+          <li>1000</li>
+        </ul>
+        <p>We can check the type of a value by using the type() function.</p>
+
+        <pre class="type2">print(type(12))</pre>
+
+        <pre class="type3">&lt;class 'int'&gt;
+&gt;</pre>
+
+        <p>Float numbers with decimal points such as:</p>
+        <ul>
+          <li>-23.4</li>
+          <li>0.0</li>
+          <li>1.42123</li>
+          <li>1200.52</li>
+        </ul>      
+        <p>the following statement checks the type for the number 2.34. (the hash show preview of the output)</p>  
+        <pre class="type2">print(type(2.34))  </pre>
+        <pre class="type3">&lt;class 'float'&gt;
+&gt;</pre>
+
+        <h3 id="casting">Casting</h3>
+        <p>Using int() and float() to specify a type of variable is also known as casting. The int() constructor, creates an integer number from an integer literal, float literal where numbers after decimal will be removed, or string literal that only contains a valid number format.</p>
+        <pre class="type2">print(int(12))
+print(int(53.43))
+print(int("-232"))</pre>
+        <pre class="type3">12
+53
+-232
+> </pre>
+        <p>The float() constructor, creates a floating point number from a float literal, integer literal where the floating point will be added, or string literal that only contains a valid number format.</p>
+        <pre  class="type2">print(float(120))
+print(float(-0.4))
+print(float("32.12"))</pre>
+        <pre class="type3">120.0
+-0.4
+32.12
+> </pre>
+
+      </div><!-- column middle -->
+      <div class = "column side"></div>
+    </div> <!-- row -->
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>

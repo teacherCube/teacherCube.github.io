@@ -2,11 +2,12 @@
   <head>
     <title>TeacherCube: Home</title>
     <link rel = "stylesheet" href="style/file.css" >
+    <link rel = "stylesheet" href="style/tabStyle.css" >
   </head>
   <body>
     <div class = "header">
        <h1>Hello World</h1>
-       <p  style="text-align:center;">Understanding programing with Javaa</p>
+       <p  style="text-align:center;">Welcome to Teacher's Cube</p>
     </div>
     <div class = "topnav">
       <a href ="#" active>Home</a>
@@ -17,17 +18,45 @@
       <div class = "column side"></div>
 
       <div class = "column middle">
-       
-        <h1>Free Resources</h1>
-      
-        <p><a href = "note/java-variable.html">Variable</a></p>
-        <p><a href = "note/java-operator.html">Operator</a></p>
-        <p><a href = "note/java-comparison.html">Comparison</a></p>
-        <p><a href = "note/java-decision.html">Decision</a></p>
-        <p><a href = "note/java-repetition.html">Repetition</a></p>
-        <p><a href = "note/java-method.html">Method</a></p>
-        <p><a href = "note/java-array.html">Array</a></p>
 
+        <div class = "tab">
+          <button class = "tablinks" onclick="openTopic(event, 'Java')">Java</button>
+          <button class = "tablinks" onclick="openTopic(event, 'Python')">Python</button>
+        </div>
+        <div id = "Java" class="tabContent">
+          <h1>Java</h1>
+          <div class="content-col">
+            <a href = "note/java-variable.html">Variable</a>
+            <a href = "note/java-operator.html">Operator</a>
+            <a href = "note/java-comparison.html">Comparison</a>
+            <a href = "note/java-decision.html">Decision</a>
+            <a href = "note/java-repetition.html">Repetition</a>
+            <a href = "note/java-method.html">Method</a>
+            <a href = "note/java-array.html">Array</a>
+          </div>
+          <div class="content-col">
+            <a href = "note/java-class.html">Class</a>
+            <a href = "note/java-inheritance.html">Inheritance</a>
+          </div>
+        </div>
+        <div id = "Python" class="tabContent">
+          <h1>Python</h1>
+          <div class="content-col">
+            <a href = "note/python-variable.html">Variable</a>       
+            <a href = "note/python-numbers.html">Numbers</a>
+            <a href = "note/python-boolean.html">Boolean</a>
+            <a href = "note/python-decision.html">Decision</a>
+            <a href = "note/python-loop.html">Loop</a>
+            <a href = "note/python-function.html">Function</a>
+            <a href = "note/python-list.html">List</a>
+          </div>
+          <div class="content-col">
+            <a href = "note/python-tuple.html">Tuple</a>
+            <a href = "note/python-dictionary.html">Dictionary</a>
+          </div>
+          <!--  -->
+        </div>
+               
                
       </div>
 
@@ -36,5 +65,8 @@
     <div class = "footer">
       <p>Content created by teacherCube</p>
     </div>
+
+    <script type="text/javascript" src = "js/tabScript.js"></script>
+
   </body>
 </html>

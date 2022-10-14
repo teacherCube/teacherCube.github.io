@@ -10,18 +10,27 @@
     </div>
     <div class = "topnav">
       <a href ="../index.html">Home</a>
-      <a href ="#">About</a>
-      <a href ="#">Contact</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
     </div>
     <div class = "row">
-      <div class = "column side"></div>
+      <div class = "column side left">
+          <a class="subtopic-link" href="#if">If</a>
+          <a class="subtopic-link" href="#ifelse">If...else</a>
+          <a class="subtopic-link" href="#ifelseif">If...else if</a>
+          <a class="subtopic-link" href="#switch">Switch</a>
+      </div>
 
       <div class = "column middle"> 
               
         <h2>Decision</h2>
+
         <p>Selection statement are also known as if statements are used to make decisions during program execution. It uses conditions, expressed using Boolean expression to help make this decisions.</p>
-        <h3>If statement</h3>
+
+        <h3 id="if">If statement</h3>
+
         <p>If the condition is true than execute the statement, otherwise don't execute the statement.</p>
+
         <pre class="type1"><ky>if</ky>(condition){
     <des>// statement(s)</des>
 }</pre>
@@ -34,8 +43,10 @@
 }</pre>
 
 
-        <h3>If...else statement</h3>
+        <h3 id="ifelse">If...else statement</h3>
+
         <p>If the condition is true than execute the first statement, otherwise execute the second statement.</p>
+
         <pre class="type1"><ky>if</ky>(condition){
     <des>// first statement(s)</des>
 }<ky>else</ky>{
@@ -52,8 +63,10 @@
 }
 
 </pre>
-        <h3>If...else if statement</h3>
+        <h3 id="ifelseif">If...else if statement</h3>
+
         <p>If the condition one is true than execute the first statement. If condition 1 is false, check condition 2. If condition 2 is true than execute the second statement, otherwise execute the last statement.</p>
+
         <pre class="type1"><ky>if</ky>(condition1){
     <des>// first statement(s)</des>
 }<ky>else if</ky> (condition2){
@@ -62,6 +75,7 @@
     <des>// last statement(s)</des>
 }</pre>
         <p>We may specify as many else if blocks as needed to solve a problem.</p>
+
         <pre class="type1"><ky>int</ky> a = <v>8</v>;
 
 <ky>if</ky>(a == <v>1</v>){
@@ -75,7 +89,7 @@
 }
 </pre>
 
-        <h3>Switch</h3>
+        <h3 id="switch">Switch</h3>
 
         <pre class="type1"><ky>switch</ky> (expression){
     <ky>case</ky> value: 
@@ -87,7 +101,9 @@
     <ky>default</ky>: 
           <des>// statement(s)</des>
 }</pre>
+
         <p>Expression is evaluated once to obtain its value. The value is checked with the case value to find a match. statement corresponding to matching value is executed. If no match found, execute statement specified as default. The break and default are optional. Break stops execution from executing the statements in following case.</p>
+
 <pre class="type1"><ky>int</ky> a = <v>2</v>;
 
 <ky>switch</ky> (a){

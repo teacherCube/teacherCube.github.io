@@ -11,14 +11,17 @@
     </div>
     <div class = "topnav">
       <a href ="../index.html">Home</a>
-      <a href ="#">About</a>
-      <a href ="#">Contact</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>>
     </div>
     <div class = "row">
-      <div class = "column side"></div>
+      <div class = "column side left">
+        <a class="subtopic-link" href="#comparison">Comparison</a>
+        <a class="subtopic-link" href="#logical">Logical</a>
+      </div>
 
       <div class = "column middle">       
-        <h2>Comparison</h2>
+        <h2 id="comparison">Comparison</h2>
         <p>Comparison operators are used to find the relationship between two values. They are also known as relational operators.</p>
         <table>
           <tr><th>Name</th><th>Operator</th><th>Example</th></tr>
@@ -63,7 +66,7 @@
 <ky>System</ky>.<em>out</em>.println(a != b);<des>// displays true</des>
 <ky>System</ky>.<em>out</em>.println(b != <v>8</v>);<des>// displays false</des>
 </pre>
-      <h2>Logical</h2>
+      <h2 id="logical">Logical</h2>
 
         <table>
           <tr><th>Name</th><th>Operator</th><th>Example</th></tr>
@@ -93,10 +96,11 @@
 <ky>System</ky>.<em>out</em>.println(!(a < b));<des>// displays false</des>
 <ky>System</ky>.<em>out</em>.println(!(<v>3</v> < <v>1</v>));<des>// displays true</des>
 </pre>
-      
-       </div>
+      </div>
        <div class = "column side"></div>
     </div>
+    <div class = "column side"></div>
+  </div>
     <div class = "footer">
         <p>Content created by teacherCube</p>
     </div>

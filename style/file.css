@@ -2,30 +2,53 @@
        box-shadow: border-box;
        /*font-family: Arial, Helvetica, sans-serif;*/
 }
+p, h1, h2, h3,table,a,dt, dd{
+       font-family: Arial, Helvetica, sans-serif;       
+}
+h3{font-size: 21px;}
 body{
        margin: 0;
 }
 p.footer{
        text-align: justify;
 }
-pre{
-       font-size: 15px;
+p,dt,dd{
+       font-size: 20px;
+       text-align: justify;
+}
+p.author{font-size: 17px;}
+
+pre, code{
+       font-size: 18px;
 }
 pre.type1{
        border: 1px solid black;
-       padding: 5px;
+       padding: 10px;
 }
 pre.type2{
-       border: 1px solid;
-       padding: 5px;
+       border: 3px inset;
+       padding: 10px;
        background-color: #e5e7e9;
+       white-space: pre-wrap;
+}
+pre.type3{
+       border: 3px inset;
+       padding: 10px;
+       background-color: #000000; 
+       color: white;
 }
 table, td, th{
        border: 1px solid;
        border-collapse: collapse;
+       font-size: 20px;
 }
 td, th{
        padding: 5px;
+}
+img.center{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
 }
 .topnav{
        overflow: hidden;
@@ -37,6 +60,7 @@ td, th{
        display: block;
        color: white;
        text-align: center;
+       font-size: 20px;
        padding: 15px 18px;
        text-decoration: none;
 }
@@ -58,6 +82,12 @@ td, th{
 .column.side{
        width: 25%;
 }
+.column.side.left{
+       position:sticky;
+       top:10px;
+       border: 1px solid lightgray;
+       margin: 10px;
+}
 .column.middle{
        width: 50%;       
 }
@@ -66,20 +96,28 @@ td, th{
        display: table;
        clear: both;
 }
-
 .footer{
-       border-top: 1px solid black;
+       border-top: 1px solid black;       
+}
+.footer p{
        text-align: center;
 }
+ky{color: blue;}
+v{color: orangered;}
+des{color: green;}
+.subtopic-link{
+       display: block;
+       font-size: 20px;
+       text-decoration: none;
+       padding:15px 18px;
+       color: #000;
 
-ky{
-       color: blue;
 }
-v{
-       color: orangered;
-}
-des{
-       color: green;
+.subtopic-link:hover{
+       background-color:#e5e7e9;
+       transition: 0.2s;
+       color: purple;
+       border-left: 3px solid blue;
 }
 #topBtn{
        position: fixed; bottom: 10px;right: 10px;
@@ -92,10 +130,21 @@ des{
        background-color: #85c1e9;color: #17202a;
 }
 
+.content{
+       height: 566px; 
+       border:1px solid lightgray;
+       padding: 0px 20px; 
+       text-align:justify;
+}
+
 @media screen and (max-width: 1000px) {
   .column.side {   
     width: 5%;
     padding: 0;
+   
+  }
+  .column.side.left{
+       display: none;
   }
     .column.middle {   
     width: 95%;

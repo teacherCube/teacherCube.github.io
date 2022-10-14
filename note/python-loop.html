@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <title>Python : Loop</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Python</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">
+          <a class="subtopic-link" href="#while">While loop</a>
+          <a class="subtopic-link" href="#for">For loop</a>
+          <a class="subtopic-link" href="#do-while">Do...while</a>
+          <a class="subtopic-link" href="#breakCont">Break and Continue</a>
+      </div>
+
+      <div class = "column middle">   
+        <h2>Loop</h2>
+
+        <p class="author">A post by <a href="https://twitter.com/teacher_cuber" target="_blank">Cuber</a></p>
+
+        <p>loop statements are used to repeat a block of codes more than one time. In Python, we use a while-loop and for- loop. Python doesn't have a do-while loop.</p>
+
+        <h3 id="while">while loop</h3>
+
+        <p>to execute a block of statement repeatedly until while the condition is True.</p>
+
+        <img class="center" src="img/py_while.png" height=250px>
+
+        <pre class="type1">
+while condition:
+    statement(s)</pre>
+
+        <p>condition is an expression evaluates to True or False.</p>
+        <p>Example</p>
+
+        <pre class="type2">
+count = 0
+<ky>while</ky> count < 3:
+    print(count)
+    count += 1</pre>
+
+        <h3 id="for">for loop</h3>
+
+        <p>For-loop is used when we know how many times to repeat.</p>
+
+        <img class="center" src="img/py_for.png" height=250px>
+
+        <pre class="type1">for index in sequence:
+    statement(s)</pre>
+
+        <p>The range() is a function that generates a sequence. The range(n) generates a sequence of numbers starting from value 0 until n-1. For example, range(10) will generate 0 until 9. The default step is 1, which means the value is incremented by 1.</p>
+
+        <pre class="type2"><ky>for</ky> index <ky>in</ky> range(11):
+    print(index)</pre>
+
+        <p>Output</p>
+
+        <pre class="type3">0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+> </pre>
+
+        <p>We can specify the starting value by using the range(start, end) to display from the start value to the end value. For example, range(3, 11) will generate a sequence of numbers from 3 until 10, with step value 1.</p>
+        <pre class="type2"><ky>for</ky> index <ky>in</ky> range(3,11):
+    print(index)</pre>
+Output
+
+<pre class="type3">3
+4
+5
+6
+7
+8
+9
+10
+> </pre>
+
+        <p>To specify step value, range(start, end, step). This creates a sequence starting from the start until the end with the step specified. For example, range(4, 11, 2) generates a sequence starting from 4 until 11 with step 2. (4,6,8,10)</p>
+
+        <pre class="type2"><ky>for</ky> index <ky>in</ky> range(4,11,2):
+    print(index)</pre>
+
+        <p>Output</p>
+
+        <pre class="type3">4
+6
+8
+10
+> </pre>
+       <h3 id="do-while">Do while</h3>
+       <p>The do-while loop executes the statements at least once.</p>
+
+       <img class="center" src="img/py_do_while.png" height=250px>
+
+       <p>While-loop is not supported in Python, we can make a while-loop behave like one. This is done by using the True boolean value as the condition, so it at least runs once. A setting like this will create an infinite loop, so we use the if statement to execute the break statement to stop the loop.</p>
+       <pre class="type2"><ky>while</ky> <ky>True</ky>:
+    inputStr = input("Type anything, q for quit: ")
+    
+    <ky>if</ky> inputStr != 'q':
+        print("You entered: ", inputStr)
+    <ky>else</ky>:
+        <ky>break</ky></pre>
+        <p>Output</p>
+        <pre class="type3">Type anything, q for quit: Hello
+You entered:  Hello
+Type anything, q for quit: red ball 
+You entered:  red ball 
+Type anything, q for quit: q
+> </pre>
+
+        <h3 id="breakCont">Break and Continue</h3>
+
+        <p>A break statement is used to terminate a loop immediately. A break statement is written in an if statement within a loop statement.</p>
+        <p>For example, displaying numbers from 0 to 10 stops printing if the number is 5.</p>
+
+        <pre class="type2"><ky>for</ky> index <ky>in</ky> range(0, 10):
+    print(num)
+    <ky>if</ky> index == 5:
+        print("break...")
+        <ky>break</ky></pre>
+
+        <p>Output</p>
+<pre class="type3">0
+1
+2
+3
+4
+5
+break...
+> </pre>
+        <p>continue statement is used to skip current iteration and continue next one. Continue statesmen is also used in a if statement.</p>
+
+        <p> For example to display numbers from 0 to 9 but not the number 5.</p>
+<pre class="type2"><ky>for</ky> index <ky>in</ky> range(0, 10):
+    <ky>if</ky> index == 5:
+        print("Continue...")
+        <ky>continue</ky>
+
+    print(index)</pre>
+    
+        <p>Output</p>
+<pre class="type3">0
+1
+2
+3
+4
+Continue...
+6
+7
+8
+9
+></pre>
+
+      </div><!-- column middle -->
+      <div class = "column side"></div>
+    </div> <!-- row -->
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>

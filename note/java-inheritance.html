@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>Java : Inheritance</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Java</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">
+        <a class="subtopic-link" href="#define">Define class</a>
+        <a class="subtopic-link" href="#create">Create object</a>
+        <a class="subtopic-link" href="#dot">Access object properties</a>
+        <a class="subtopic-link" href="#construct">Constructor</a>        
+      </div>
+
+      <div class = "column middle">       
+<h2>Inheritance</h2>
+
+<p>Inheritance is deriving a new class from an existing class. It inherits properties of its parent class.</p>
+
+<img src="img/uml_parent_child.png" height=180px>
+
+<h3 id="define">Defining inheritance</h3>
+<p>Inheritance id defined using the <ky>extends</ky> keyword</p>
+<pre>class ChildClass extends ParentClass{
+    <des>// fields and methods of child class</des>
+}</pre>
+
+<p>Example</p>
+
+<pre>class Shape{
+    double width;
+    double height;
+    String color;
+
+    void displayColor(){
+        System.out.println(color);
+    }
+}</pre>
+
+<p>now, Circle class inherits the Shape class.
+
+<pre>class Circle extends Shape{
+    double radius;
+
+    void calculateCircleArea(){
+        double area = Math.PI * this.radius * this.radius;
+        System.out.println("Area of circle is " + area);
+    }
+}</pre>
+<p>Circle is the child class and Shape is parent class. By doing this Circle inherits the name, color and count attributes from Shape. Inheritance also known as is-a relationship, so Circle is-a Shape. Circle inherits all the attributes and behaviors of the Shape.  </p>
+
+
+<pre>class App{
+    public static void main(String[] args){
+        Circle cir = new Circle();
+        cir.color = "red";
+        cir.displayColor();
+    }
+}</pre>
+<p>Output</p>
+<pre class="type3">red</pre>
+
+<h3>Inheritance types</h3>
+<dl>
+<dt>Single inheritance</dt>
+<dd><p>Single inheritance is when single child class is inherited from single parent class.</p>
+<img class="center" src="img/single-type.png" height = 100px>
+</dd>
+<dt>Hierachical inheritance</dt>
+<dd><p>when there is more than one child class is derived from single parent class.</p>
+<img class="center" src="img/hierarchical-type.png" height = 100px></dd>
+<dt>Multilevel inheritance</dt>
+<dd><p>when a class derived from another class which also derived from another class.</p>
+<img class="center" src="img/multilevel-type.png" height = 150px></dd>
+<dt>Multiple inheritance</dt>
+<dd><p>when a child class is derived from two or more parent class. </p>
+<img class="center" src="img/multiple-type.png" height = 100px><p>*Java do not support this type of inheritance. Can be achived using interface.</p></dd>
+<dt>Hybrid inheritance</dt>
+<dd><p>Combination of two of more types of inheritance discussed above. In java, all inheritance type except the multiple inheritance.</p>
+<img class="center" src="img/hybrid-type.png" height = 180px></dd>
+</dl>
+             
+      </div>
+      <div class = "column side"></div>
+    </div>
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Python : Boolean</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Python</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">
+        <a class="subtopic-link" href="#declare">Declare</a>
+        <a class="subtopic-link" href="#comparison">Comparison</a>
+      </div>
+
+      <div class = "column middle">   
+        <h2>Boolean</h2>
+        <p>A post by <a href="https://twitter.com/teacher_cuber" target="_blank">Cuber</a></p>
+
+        <p>Boolean is used in programming to imitate real-world situations. It is used in decision-making and loop statements. A boolean expression is an expression that gives boolean values as result.</p>
+
+        <p>Boolean data type only has true or false values. In Python, True and False keywords are used to represent boolean values.</p>
+
+        <h3 id="declare">Declare boolean variable</h3>
+
+        <p> A boolean variable is created by assigning True or False to a variable.</p>
+
+        <pre class="type1">variableName = [True|False]</pre>
+
+        <p>For example, light_is_on is a boolean variable with the value True.</p>
+        <pre class="type2">light_is_on = True</pre>
+
+        <p>to check if a given value is True or False, we can use the <code>bool()</code> function. (The hash show preview of output)</p>
+
+<pre class="type2">print(bool(0))        # False
+print(bool(25))       # True
+print(bool("hello"))  # True
+print(bool(None))     # False</pre>
+
+
+        <pre class="type3">False
+True
+True
+False
+></pre>
+
+       <h3 id="comparison">Comparison operation</h3>
+
+       <p>Comparison operators return a boolean value as result. Comparisons are used in decision-making and loop statements.</p>
+
+       <table>
+         <tr><th>Operator</th><th>Name</th><th>Usage</th></tr>
+         <tr><td>&lt;</td><td>Less Than</td><td>a < b</td></tr>
+         <tr><td>&gt;</td><td>Greater Than</td><td>a > b</td></tr>
+         <tr><td>&lt;=</td><td>Less Than or Equal to</td><td>a <= b</td></tr>
+         <tr><td>&gt;=</td><td>Greater Than or Equal to</td><td>a >= b</td></tr>
+         <tr><td>==</td><td>Equal to</td><td>a == b</td></tr>
+         <tr><td>!=</td><td>Not Equal to</td><td>a != b</td></tr>
+       </table>
+       <p>The following example shows how the comparison operator works to check the relationship between 30 and 45.5. (The hash show preview of output)</p>
+
+       <pre class="type2">num1 = 30
+num2 = 45.5
+
+print(num1 < num2)   #True
+print(num1 > num2)   #False
+print(num1 <= num2)  #True
+print(num1 >= num2)  #False
+print(num1 == num2)  #False
+print(num1 != num2)  #True</pre>
+        <pre class="type3">True
+False
+True
+False
+False
+True
+></pre>
+
+      </div><!-- column middle -->
+      <div class = "column side"></div>
+    </div> <!-- row -->
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Java : Class</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Java</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">
+        <a class="subtopic-link" href="#define">Define class</a>
+        <a class="subtopic-link" href="#create">Create object</a>
+        <a class="subtopic-link" href="#dot">Access object properties</a>
+        <a class="subtopic-link" href="#construct">Constructor</a>        
+      </div>
+
+      <div class = "column middle">       
+<h2>Class</h2>
+
+<p>Class is the blueprint for creating objects. Objects are an instance of a class.</p>
+
+<h3 id="define">Defining class</h3>
+
+<pre class = "type1">class ClassName{
+    <des>// fields</des>
+    <des>// methods</des>        
+}</pre>
+<p>For example, following class defines a Circle class. It has two fields radius and color and one method called calculateArea()</p>
+<pre class = "type2"><ky>class</ky> Circle{
+    <ky>double</ky> radius;
+    String color;
+
+    <ky>double</ky> calculateArea(){
+        <ky>double</ky> area;
+        area = Math.<em>PI</em> * Math.pow(<ky>this</ky>.radius, 2);
+        <ky>return</ky> area;
+    }       
+}</pre>
+
+<p>This class should be saved in a file called <em>Circle.java</em> in the project src folder.</p>
+
+<h3 id="create">Create object</h3>
+<p>Object is created using the new keyword.</p>
+<pre class = "type1">ClassName objectReference = new ClassName();</pre>
+
+<pre class = "type2"><ky>class</ky> App{
+    <ky>public</ky> <ky>static</ky> <ky>void</ky> main(String[] args){
+        Circle circle1 = <ky>new</ky> Circle();
+    }
+}</pre>
+
+<h3 id="dot">Accessing object properties</h3>
+<p>Object properties accessed using dot operator. Fields are accessed as follows:</p>
+<pre class = "type1">objectReference.fieldName;</pre>
+
+<p>and, methods are accessed as below</p>
+
+<pre class = "type1">objectReference.methodName(parameters);</pre>
+
+<pre class = "type2"><ky>class</ky> App{
+    <ky>public</ky> <ky>static</ky> <ky>void</ky> main(String[] args){
+        Circle circle1 = <ky>new</ky> Circle();
+        circle1.radius = <v>3.5</v>;
+        <ky>double</ky> area = circle1.getArea();
+        System.out.println(<v>"area "</v> + area); 
+    }
+}</pre>
+
+<h3 id="construct">Constructor</h3>
+
+<p>Constructors creates object and initializes them. Constructors are called by the new keyword, when object is created.</p>
+
+<pre class = "type1">ClassName(){
+    fieldName = initialvalue;
+}</pre>
+<p>Example</p>
+<pre class="type2"><ky>class</ky> Circle{
+    <ky>double</ky> radius;
+
+    Circle(){
+      radius = <v>1.0</v>;
+    }
+
+    <ky>double</ky> getArea(){
+      <ky>double</ky> area;
+      area = Math.<em>PI</em> * Math.pow(<ky>this</ky>.radius, <v>2</v>);
+      <ky>return</ky> area;
+    }
+}</pre>
+             
+      </div>
+      <div class = "column side"></div>
+    </div>
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>
