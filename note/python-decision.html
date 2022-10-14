@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <title>Python : Decision</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Python</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">
+          
+          <a class="subtopic-link" href="#if">If statement</a>
+          <a class="subtopic-link" href="#if-else">If...Else statement</a>
+          <a class="subtopic-link" href="#if-elif">If...Elif statement</a>
+      </div>
+
+      <div class = "column middle">   
+        <h2>Decision</h2>
+
+        <p>A post by <a href="https://twitter.com/teacher_cuber" target="_blank">Cuber</a></p>
+
+        <p>To control the way the program executes. Sometimes we only want certain codes to run when a specific condition is met. Python use if statements to control flow that depends on conditions.</p>
+
+        <p>To implement decision-making in a program, Python has an if statement, if-else statement, and if-elif statement. </p>
+
+        <h3 id = "if">if statement</h3>
+
+        <p>The simplest form of the if statement. It executes a block of code only if a condition is correct.</p>
+
+        <img class = "center" src = "img/py_if_stmt.png" height=230px>
+
+        <p>The syntax:</p>
+
+        <pre class="type1">if condition:
+    statement(s)</pre>
+
+        <p>Condition is an expression that returns a boolean value. the statement(s) executes if the condition is True. After the condition, there is a colon sign (:) ending the first line.</p>
+
+        <p>Python does not use curly brackets to indicate blocks.  The statements are indented to make them part of the if statement block.</p>
+
+        <pre class="type2">aString = "greet"
+
+if aString == "greet":
+    name = input("What is your name?")
+    print("Hello, how are you ", name)</pre>
+
+        <p>Output</p>
+
+        <pre class="type3">What is your name?Civa
+Hello, how are you  Civa
+> </pre>
+
+        <p>if the condition is False, the statements are skipped and exit the if statement to the next line code.</p>
+
+        <h3 id="if-else">if-else statement</h3>
+
+        <p>To specify a statement to execute if the condition is true and another group statement if the expression is false.</p>
+
+        <img class = "center" src = "img/py_if_else_stmt.png" height = 200px;>
+
+        <p>The syntax</p>
+
+        <pre class="type1">if condition:
+     statement1(s)
+else:
+     statement2(s)</pre>
+
+        <p>if the condition is True statement1(s) will execute. And if the expression is False, statement2(s) will execute. </p>
+
+        <p>There is a colon sign (:) after the condition and after the else keyword. The statements are indented to indicate block.</p>
+
+        <p>The following example checks the user's weather information and gives appropriate messages according to weather conditions.</p>
+
+        <pre class="type2">weather =input("Enter weather ")
+
+if weather.lower() == "raining":
+    print("Ride bus")
+else:
+    print("Take a Walk")</pre>
+        <p>Output</p>
+
+        <pre class="type3">Enter weather sunny
+Take a Walk
+></pre>
+
+        <p>The program prompts users to enter weather conditions. The user enters 'sunny' and presses enter. the if statement checks if the user entered "raining". the lower() function makes sure the letter case is the same. The condition returns false, so display "Take a walk".</p>
+
+        <h3 id="if-elif">if-elif statement</h3>
+
+        <p>to execute different statements under multiple conditions.</p>
+
+        <img class= "center" src="img/py_if_elif_else_stmt.png" height=270px>
+        <p>The syntax</p>
+        <pre class = "type1">if condition1:
+    statement(s)1
+elif condition2:
+    statement(s)2
+else:
+    statement(s)3</pre>
+
+        <p>Example</p>
+        <pre class="type2">score = 67
+
+if score > 80:
+    grade = 'A'
+elif score > 70:
+    grade = 'B'
+elif score > 50:
+    grade = 'C'
+elif score > 40:
+    grade = 'D'
+else:
+    grade = 'F'
+
+print("Score: ", score)
+print("Grade: ", grade)</pre>
+        <pre class = "type3">Score: 67
+Grade: C
+></pre>
+
+      </div><!-- column middle -->
+      <div class = "column side"></div>
+    </div> <!-- row -->
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>

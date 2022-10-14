@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Python : Variable</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Python</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">
+        <a class="subtopic-link" href="#declare">Declare List</a>
+        <a class="subtopic-link" href="#naming">Naming</a>
+        <a class="subtopic-link" href="#change-type"> Change Type</a>
+        <a class="subtopic-link" href="#constant">Constant</a>      
+      </div>
+
+      <div class = "column middle">   
+        <h2>Variable</h2>
+        <p>Gives the program the ability to remember data and use them later in the program process. The value of a variable can change when the program is running.</p>
+        <p>A variable is a memory location to store data. Data type reserves memory for the variable to store data. Standard data types are number, string, list, tuple, and dictionary.</p>
+        <h3 id="declare">Declaring variable</h3>
+        <p>Data types are determined by the value assigned to the variable. The variable is declared the moment value is assigned to it and there is no declaration statement like Java.</p>
+        <pre class="type2">var1 = 3
+print(var1)</pre>
+
+        <p>In the example above, var1 is an integer because the assigned value 3 is an integer.</p>
+        <h3 id="naming">Naming</h3>
+        <p>Variable names can only contain letters, number, and underscore. They cannot start with numbers. A variable name can contain space. Keywords or built-in function names cannot be used as a variable name.</p>
+
+        <p>The variable name should be self-descriptive and concise. A variable name containing two or more words is separated with an underscore or uses a camel case. For example</p>
+        <pre class="type2">annual_income = 300000  # using underscore
+annualIncome = 350000   # using camel case</pre>
+        <h3 id="change-type">Changing type</h3>
+        <p>We already know the value of a variable can change during program execution. In python, the same variable can change its data type when a new value from a different data type is assigned. For example,</p>
+        <pre class="type2">var1 = 3
+var1 = "Hello"
+print(var1)</pre>
+        <p>In the first line, the data type  var1 is an integer. In the second line, the data type changes to string type when a string literal is assigned to it.</p>
+        <p>The reference to the variable can be deleted using the del statement.</p>
+        <pre class="type2">del var1</pre>
+
+        <h2 id="constant">Constants</h2>
+        <p>Constant is memory location similar to variables to store data, but their value won’t change during program execution. Python does not support the constant.  To avoid confusion and to help us treat it as a constant name the variable using all caps, for example:</p>
+        <pre class="type2">PI_VALUE = 3.142</pre>
+        <p>The interpreter does not prevent accidental value changes, the programmer uses the all-caps name as a guide to preventing value modification when writing code.<p>
+      </div><!-- column middle -->
+      <div class = "column side"></div>
+    </div> <!-- row -->
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>

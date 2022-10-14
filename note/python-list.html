@@ -1,0 +1,278 @@
+<html>
+  <head>
+    <title>Python : List</title>
+    <link rel = "stylesheet" href="../style/file.css" >
+  </head>
+  <body>
+    <div class = "header">
+       <h1>Notes</h1>
+       <p style="text-align:center;">Learning programming with Python</p>
+    </div>
+    <div class = "topnav">
+      <a href ="../index.html">Home</a>
+      <a href ="../pages/about.html">About</a>
+      <a href ="../pages/contact.html">Contact</a>
+    </div>
+    <div class = "row">
+      <div class = "column side left">        
+        <a class="subtopic-link" href="#declare">Declare List</a>
+        <a class="subtopic-link" href="#access">Access Element</a>
+        <a class="subtopic-link" href="#modify">Modify</a>
+        <a class="subtopic-link" href="#add">Add Element</a>
+        <a class="subtopic-link" href="#remove">Remove Element</a>
+        <a class="subtopic-link" href="#extend">Extend</a>
+      </div>
+
+      <div class = "column middle">   
+        <h2>List</h2>
+
+        <p class="author">A post by <a href="https://twitter.com/teacher_cuber" target="_blank">Cuber</a></p>
+
+<p>A python list is used to store a sequence of data called elements. Each element is assigned with an integer known as an index. Index values start from zero, and increment by 1.</p>
+
+<h3 id="declare">Declare List</h3>
+
+<p>Unlike an array, a list can consist of data from different data types. The list is indicated using a square. Adding new elements and remove</p>
+
+<pre class="type1">list_name = []</pre>
+
+<pre class="type1">list_name = [item1, item2,...., itemN]</pre>
+
+<p>example, list consisting of Number</p>
+
+<pre class="type2">myList = [4,5,2,6]
+print(myList)</pre>        
+
+<pre class="type3">[4, 5, 2, 6]
+></pre>
+
+<p>List consisting of characters</p>
+
+<pre class="type2">myList = ['J','o','e']
+print("myList)</pre>      
+
+<pre class="type3">['J', 'o', 'e']
+></pre>
+
+<p>List consisting Strings</p>
+
+<pre class="type2">myList = ['Adam','Ben Hong','Citra']
+print(myList)</pre>
+
+<pre class="type3">['Adam', 'Ben Hong', 'Citra']
+></pre>
+
+<p>List consisting of mixed data type.</p>
+
+<pre class="type2">myList = ["Adam", 39, 89.5, 'A']
+print("Original: ", myList)</pre>
+
+<pre class="type3">['Adam', 39, 89.5, 'A']
+></pre>
+
+<h3 id="access">Access elements</h3>
+
+<p>Uses index value to access specific element in list. starts from zero 0</p>
+
+<pre class="type1">listName[index]</pre>
+
+<p>Example</p>
+
+<pre class="type2">myList = [4,5,2,6]
+
+element1 = myList[0]
+element2 = myList[1]
+element3 = myList[2]
+element4 = myList[3]
+
+print("First element: ", element1)
+print("Third element: ", element3)</pre>
+
+<pre class="type3">First element:  4
+Third element:  2</pre>
+
+<p>negative values allow element access from behind. -1 is last element, -2 second last element and so on...</p>
+
+<pre class="type2">myList = [4,5,2,6]
+
+element1 = myList[-4]
+element2 = myList[-3]
+element3 = myList[-2]
+element4 = myList[-1]
+
+print("First element: ", element2)
+print("Third element: ", element4)</pre>
+
+<pre class="type3">First element:  5
+Third element:  6 </pre>
+
+<h3 id = "modify">Modify</h3>
+
+<p>Index value also used to change or modify the value of an element.</p>
+
+<pre class="type1">listName[index] = newValue</pre>
+
+<p>Example</p>
+
+<pre class="type2">myList = [4,5,2,6]
+print("Original: ", myList)
+myList[2] = 888
+print("After modify: ", myList)</pre>
+
+<pre class="type3">Original:  [4, 5, 2, 6]
+After modify:  [4, 5, 888, 6]
+></pre>
+
+<p>If the index is out of range following error will occur</p>
+
+<pre class="type3">IndexError: list assignment index out of range</pre>
+
+<h3 id="add">add element to list</h3>
+
+<p>a new item is added to the end of the list.</p>
+
+<pre class="type1">listName.append(value)</pre>
+
+<p>For example, add number 888 to the list.</p>
+<pre class="type2">myList = [4, 5, 2, 6]
+print("Original: ", myList)
+
+myList.append(888)
+print("After append: ", myList)</pre>
+
+<pre class="type3">Original: [4, 5, 2, 6]
+After append: [4, 5, 2, 6, 888]
+></pre>
+
+<p>a new item is added at specific location in the list. location is specified using index.</p>
+
+<pre class="type1">listName.insert(index, value)</pre>
+<p>Example, add number 888 as second element of the list.</p>
+
+<pre class="type2">myList = [4, 5, 2, 6]
+print("Original: ", myList)
+myList.insert(1, 888)
+print("After append: ", myList)</pre>
+
+<pre class="type3">Original:  [4, 5, 2, 6]
+After append:  [4, 888, 5, 2, 6]
+></pre>
+
+<h3 id="remove">Removing element from list</h3>
+
+<p>to remove items from list using index</p>
+
+<pre class="type1">del listName[index]</pre>
+
+<p>Example</p>
+
+<pre class="type2">myList = [4, 5, 888, 2, 6]
+print("Original: ", myList)
+
+del myList[2]
+print("After delete: ", myList)</pre>
+
+<p>Output</p>
+
+<pre class="type3">Original:  [4, 5, 888, 2, 6]
+After delete:  [4, 5, 2, 6]
+> </pre>
+
+<p>to remove item by its value use the remove function</p>
+<pre class="type1">listName.remove(value)</pre>
+<p>Example</p>
+<pre class="type2">myList = [4, 5, 888, 2, 6]
+print("Original: ", myList)
+
+myList.remove(888)
+print("After delete: ", myList)</pre>
+<p>Output</p>
+<pre class="type3">Original:  [4, 5, 888, 2, 6]
+After remove:  [4, 5, 2, 6]
+> </pre>
+
+<p>pop() remove the last element and return its value</p>
+<pre class="type1">lastItem = listName.pop()</pre>
+<p>Example</p>
+<pre class="type2">myList = [4, 5, 2, 6, 888]
+print("Original: ", myList)
+
+temp = myList.pop()
+print("Popped: ", temp)
+print("After first pop", myList)
+
+temp = myList.pop()
+print("Popped: ", temp)
+print("After second pop", myList)</pre>
+<p>Output</p>
+<pre class="type3">Original:  [4, 5, 2, 6, 888]
+Popped:  888
+After first pop [4, 5, 2, 6]
+Popped:  6
+After second pop [4, 5, 2]
+></pre>
+<p>pop(index) remove the element at location specified by index and returns its value</p>
+<pre class="type1">itemAtIndex = list.pop(index)</pre>
+<p>Example</p>
+<pre class="type2">myList = [4,  5, 888, 2, 6]
+print("Popped again: ", temp)
+print("After second 5, 888, 2, 6]
+print("Original: ", myList)
+
+temp = myList.pop(2)
+print("Popped: ", temp)
+print("After first pop", myList)
+
+temp = myList.pop(3)
+pop", myList)</pre>
+<p>Output</p>
+<pre class="type3">Original:  [4, 5, 888, 2, 6]
+Popped:  888
+After first pop [4, 5, 2, 6]
+Popped again:  6
+After second pop [4, 5, 2]
+> </pre>
+<h3 id="extend">Extend</h3>
+<p>The extend() function iterates over an iterable object like a list or tuple and adds each item to the list that invokes the extend function.</p>
+
+<pre class="type2">animals=['dog','cat']
+newAnimals=['bird','zebra']
+
+animals.extend(newAnimals)
+print(animals)</pre>
+
+<p>Output</p>
+
+<pre class="type3">['dog', 'cat', 'bird', 'zebra']
+></pre>
+
+<p>Besides the append() function,  another list can be appended using the plus (+) sign to append the list.</p>
+
+<pre class="type2">animals = ['dog','cat']
+
+animals = animals + ['bird','hamster']
+print(animals)</pre>
+
+<p>Output</p>
+<pre class="type3">['dog', 'cat', 'bird', 'hamster']
+></pre>
+
+<p>If a string is passed to the extend() function, each element is iterated and added one by one as the list item.</p>
+
+<pre class="type2">animals = ['dog','cat']
+
+animals.extend('bird')
+print(animals)</pre>
+<p>Output</p>
+<pre class="type3">['dog', 'cat', 'b', 'i', 'r', 'd']
+></pre>
+      </div><!-- column middle -->
+      <div class = "column side"></div>
+    </div> <!-- row -->
+    <div class = "footer">
+        <p>Content created by teacherCube</p>
+    </div>
+    <button id="topBtn" onclick="backToTop()">Top</button>
+    <script src="../js/topButton.js"></script>
+  </body>
+</html>
