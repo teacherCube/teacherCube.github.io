@@ -14,7 +14,13 @@
       <a href ="../pages/contact.html">Contact</a>
     </div>
     <div class = "row">
-      <div class = "column side left">        
+      <div class = "column side left">  
+        <a class="subtopic-link" href="#create">Create dictionary</a>  
+        <a class="subtopic-link" href="#display">Display dictionary elements</a> 
+        <a class="subtopic-link" href="#access">Access dictionary</a>   
+        <a class="subtopic-link" href="#modify">Modify element value</a>
+        <a class="subtopic-link" href="#add">Add new element</a>
+        <a class="subtopic-link" href="#remove">Remove element</a>
       </div>
 
       <div class = "column middle">   
@@ -22,6 +28,142 @@
 
         <p class="author">A post by <a href="https://twitter.com/teacher_cuber" target="_blank">Cuber</a></p>
 
+<p>Dictionary is a data structure that stores information about an object in key and value pairs. Dictionary is also called hash or map in other programming languages.</p>
+
+<p>Dictionary is an ordered list of items. Instead of an index, it uses a key to refer to stored value. Dictionary is mutable, we can add new pair-value pairs and update existing values. Its entries are unique, so no two entries are the same.</p>
+
+<h3 id="create">Creating Dictionary</h3>
+
+<p>A dictionary can be created by using the curly brackets { and }.</p>
+
+<pre class="type1">dict_name = {} # empty dictionary</pre>
+
+<p>to create a dictionary with pairs of keys and values.</p>
+
+<pre class="type1">dict_name = {key1: value1, key2:value2,...., keyN:valueN}</pre>
+
+<p>The key can be an integer or a string, usually, it's a string. The value can be numbers, strings, lists, tuples, or dictionaries.</p>
+
+<p>Example</p>
+
+<pre class="type2">a_dict = {'title':'Peter Pan', 'year':1911, 'author':'J.M.Barrie'}
+
+print(a_dict)</pre>
+
+<p>Output</p>
+
+<pre class="type3">{'title': 'Peter Pan', 'year': 1911, 'author': 'J.M.Barrie'}
+></pre> 
+
+<h3 id="display">Display using Loop</h3>
+
+<p>Display using loop using the items() function. It returns the key and value of each item in the dictionary.</p>
+
+<pre class="type2">a_dict = {'title':'Peter Pan', 'year':1911, 'author':'J.M.Barrie'}
+
+for item in a_dict.items():
+    print(item)</pre>
+
+<p>Output</p>
+
+<pre class="type3">('title', 'Peter Pan')
+('year', 1911)
+('author', 'J.M.Barrie')
+> </pre>
+
+<p>To assign key and value obtained from items() function in a separate variable.</p>
+
+<pre class="type2">for key, value in a_dict.items():
+    print(key,"=", value)</pre>
+
+<p>Output</p>
+
+<pre class="type3">title = Peter Pan
+year = 1911
+author = J.M.Barrie
+></pre>
+
+<p>Other than this, the values() and the keys() function can be used to only get a list of keys or values. And, the len() function returns how many items are there in a dictionary.</p>
+
+<h3 id="access">Accessing Dictionary</h3>
+
+<p>Instead of an index number, the key is used to refer to an element in the dictionary. Following syntax returns a value corresponding to the key.</p>
+
+<pre class="type1">variable = dict_name[key]</pre>
+
+<p>Example</p>
+
+<pre class="type2">a_dict = {'title':'Peter Pan', 'year':1911, 'author':'J.M.Barrie'}
+print(a_dict['year'])</pre>
+
+<p>Output</p>
+
+<pre class="type3">1911
+></pre>
+
+<p>And, <code>dict_name.get(key)</code> returns the value corresponding to the key. It returns <ky>None</ky> if the key is not in the dictionary.</p>
+
+<pre class="type2">a_dict = {'title':'Peter Pan', 'year':1911, 'author':'J.M.Barrie'} print(a_dict.get('year')) 
+print(a_dict.get('pages'))</pre>
+
+<p>Output</p>
+
+<pre class="type3">1911 
+None
+></pre>
+
+<h3 id="modify">Modify Element</h3>
+
+<p>The following example shows how to modify a dictionary element.</p>
+
+<pre class="type1">dict_name[key] = newValue</pre>
+
+<p>Example</p>
+
+<pre class="type2">a_dict = {'title':'Peter Pan', 'year':1911, 'author':'J.M.Barrie'}
+a_dict['author'] = 'James Matthew Barrie'
+print(a_dict)</pre>
+
+<p>Output</p>
+
+<pre class="type3">{'title': 'Peter Pan', 'year': 1911, 'author': 'James Matthew Barrie'}
+></pre> 
+
+<h3 id="add">Add Element</h3>
+
+<p>Adding a new element into a dictionary.</p>
+
+<pre class="type1">dict_name[newKey] = value</pre>
+
+<p>The following example shows how to add an element to a dictionary.  An element with a key named "pages" with a value of  267 is added to the dictionary.</p>
+
+<pre class="type2">a_dict = {'title':'Peter Pan', 'year':1911, 'author':'J.M.Barrie'}
+
+a_dict['pages'] = 267
+print(a_dict)</pre>
+
+<p>Output</p>
+
+<pre class="type3">{'title': 'Peter Pan', 'year': 1911, 'author': 'J.M.Barrie', 'pages': 267}
+></pre> 
+
+<h3 id="remove">Remove element</h3>
+
+<p>Syntax to delete an element from a dictionary.</p>
+
+<pre class="type1">del dict_name[key]</pre>
+
+<p>The following example shows how to delete an element from a dictionary. Element with a key value of "year" is removed from the dictionary.</p>
+
+<pre class="type2">a_dict = {'title':'Peter Pan', 'year':1911, 'author':'J.M.Barrie'}
+
+del a_dict['year']
+print(a_dict)</pre>
+
+<p>Output</p>
+
+<pre class="type3">{'title': 'Peter Pan', 'author': 'J.M.Barrie'}
+></pre>
 
       </div><!-- column middle -->
       <div class = "column side"></div>

@@ -21,6 +21,7 @@ p.author{font-size: 17px;}
 pre, code{
        font-size: 18px;
 }
+pre{white-space: pre-wrap;}
 pre.type1{
        border: 1px solid black;
        padding: 10px;
@@ -28,8 +29,7 @@ pre.type1{
 pre.type2{
        border: 3px inset;
        padding: 10px;
-       background-color: #e5e7e9;
-       white-space: pre-wrap;
+       background-color: #e5e7e9;       
 }
 pre.type3{
        border: 3px inset;
