@@ -1,3 +1,3 @@
-Hello to TeacherCube
+Hello from TeacherCube
 
-A non profit project to share programming notes for novice programmers.
+A non profit project to share programming notes for programming students.
